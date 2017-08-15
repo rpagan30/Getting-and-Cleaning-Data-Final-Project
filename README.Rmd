@@ -1,13 +1,6 @@
----
-title: "README"
-author: "Rafael Pagan"
-date: "August 15, 2017"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+##README
+by Rafael Pagan  
+August 15, 2017
 
 ##Getting and Cleaning Data Course Project README
 This repository contains the work to fulfill the requirements of the final project for the course Getting and Cleaning Data by Johns Hopkins, offered through Coursera.
