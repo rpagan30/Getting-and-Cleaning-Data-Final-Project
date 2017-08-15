@@ -1,8 +1,8 @@
-##README
+## README
 by Rafael Pagan  
 August 15, 2017
 
-##Getting and Cleaning Data Course Project README
+## Getting and Cleaning Data Course Project README
 This repository contains the work to fulfill the requirements of the final project for the course Getting and Cleaning Data by Johns Hopkins, offered through Coursera.
 
 Additional to this read me, in it you will find:
