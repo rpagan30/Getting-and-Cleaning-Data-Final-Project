@@ -13,7 +13,7 @@ Additional to this read me, in it you will find:
 
 USAGE:
 
-1. Copy the run_analysis.R script to the folder that contains the UCI HAR Data set.
+1. Copy the run_analysis.R script to a working directory that contains a folder named "data" with the exatracted UCI HAR Data set.
 2. Run the R script.
 
 ``` {R script}

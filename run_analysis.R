@@ -6,23 +6,23 @@
 
 ## Make data tidy
 #Features list
-features <- read.table("features.txt")
+features <- read.table("./data/features.txt")
 features <- features[(-1)]
-aLabels <- read.table("activity_labels.txt")
+aLabels <- read.table("/data/activity_labels.txt")
 
 #Load Train Data
-xTrain<-read.table("train/X_train.txt")
-yTrain<-read.table("train/Y_train.txt")
-sTrain<-read.table("train/subject_train.txt")
+xTrain<-read.table("./data/train/X_train.txt")
+yTrain<-read.table("./data/train/Y_train.txt")
+sTrain<-read.table("./data/train/subject_train.txt")
 names(xTrain) <- t(features)
 names(sTrain) <- "subject"
 names(yTrain) <- "activity"
 d0 <- data.frame(cbind(sTrain, xTrain, yTrain))
 
 #Load Test Data
-xTest <- read.table("test/X_test.txt")
-yTest <- read.table("test/Y_test.txt")
-sTest <- read.table("test/subject_test.txt")
+xTest <- read.table("./data/test/X_test.txt")
+yTest <- read.table("./data/test/Y_test.txt")
+sTest <- read.table("./data/test/subject_test.txt")
 names(xTest) <- t(features)
 names(sTest) <- "subject"
 names(yTest) <- "activity"
@@ -32,7 +32,7 @@ d1 <- data.frame(cbind(sTest, xTest, yTest))
 mergedData = merge(d0, d1, all = TRUE)
 
 #Replace encoded variable with activity names
-aLabels<-read.table("activity_labels.txt")
+aLabels<-read.table("./data/activity_labels.txt")
 mergedData$activity <- factor(mergedData$activity, levels = c(1,2,3,4,5,6), 
                               labels = as.character(aLabels$V2))
 
